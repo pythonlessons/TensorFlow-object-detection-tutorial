@@ -1,16 +1,16 @@
 # TensorFlow Object Detection merged with grabscreen
 
-This is third part of our CS:GO object detection tutorial. In this part we are going to merge jupyter API code from 1-st tutorial with code from 2-nd tutorial where we tested 3 different ways of grabing screen.
+This is third part of our CS:GO object detection tutorial. In this part we are going to merge jupyter API code from 1-st tutorial with code from 2-nd tutorial where we tested 3 different ways of grabbing screen.
 
 To begin, we're going to modify the notebook first by converting it to a .py file. If you want to keep it in a notebook, that's fine too. To convert, you can go to file > download as > python file. Once that's done, we're going to comment out the lines we don't need.
 
-Once you have you'r converted object detection file, go to your TensorFlow installation folder: research\object_detection\data an grab mscoco_label_map.pbtxt file, place it to you working directory.
+Once you have your converted object detection file, go to your TensorFlow installation folder: research\object_detection\data and grab mscoco_label_map.pbtxt file, place it to you working directory.
 
 Next you should download pretrained model from [here](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md/), I am using faster_rcnn_inception_v2_coco, so I recommend you to use the same, at least at the beginning. Take frozen_inference_graph.pb file and transfer it to your local working repository.
 
-So we begin by importing time, cv2, mss libraries, if you don't have them, install before moving forward.
+So we begin by importing time, CV2, MSS libraries. If you don't have them, install before moving forward.
 
-I personally imported line to dissable cuda devices, because I wanted to run this example on CPU, because runing tensorflow-gpu takes more time to startup in backend.
+I personally imported line to disable CUDA devices, because I wanted to run this example on CPU, because running tensorflow-gpu takes more time to startup in backend.
 ```
 os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 ```
@@ -50,7 +50,7 @@ There are two lines of import before going to an actual code:
 from utils import label_map_util
 from utils import visualization_utils as vis_util
 ```
-But if you will try to use them like this, you will  get an error, so add object_detection. before utils, just like this:
+But if you will try to use them like this, you will  get an error, so add ```object_detection.``` before utils, just like this:
 ```
 from object_detection.utils import label_map_util
 from object_detection.utils import visualization_utils as vis_util
@@ -76,7 +76,7 @@ PATH_TO_LABELS = 'mscoco_label_map.pbtxt'
 NUM_CLASSES = 99
 ```
  
-Next you can comment all [6] part, because we woun't use it:
+Next you can comment all [6] part, because we won't use it:
 ```
 #opener = urllib.request.URLopener()
 #opener.retrieve(DOWNLOAD_BASE + MODEL_FILE, MODEL_FILE)
