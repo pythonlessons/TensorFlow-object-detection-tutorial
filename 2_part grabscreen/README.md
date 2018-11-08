@@ -1,7 +1,7 @@
 # Python grab screen tutorial
 ### Original text version of tutorial you can visit [here](http://pylessons/Tensorflow-object-detection-grab-screen/).
 
-[![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20grabscreen/1_YouTube.JPG)](https://www.youtube.com/watch?v=Wc2gFarBEE0 "TensorFlow object detection tutorial how to grab a screen")
+[![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/2_YouTube.JPG)](https://www.youtube.com/watch?v=Wc2gFarBEE0 "TensorFlow object detection tutorial how to grab a screen")
 
 In previous installation tutorial we mentioned that vision of this tutorial series is to create TensorFlow object detection model, that could detect CS:GO players. In this tutorial we’ll focus more on how to grab our monitor screen where we could detect objects. I must mention that we need to find the fastest way to grab screen, because later when we process images FPS drops, and if our screen grab FPS would be slow, this would affect our final frames per second.
 
