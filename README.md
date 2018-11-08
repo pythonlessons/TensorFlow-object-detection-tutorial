@@ -1,7 +1,7 @@
 
 
 # TensorFlow Object Detection Introduction
-### Original text version of tutorial you can visit [here](http://pylessons/Tensorflow-object-detection-installation/).
+### Original text version of tutorial you can visit [here](http://pylessons.com/Tensorflow-object-detection-installation/).
 
 The purpose of this tutorial is to learn how to install and prepare TensorFlow framework to train your own convolutional neural network object detection classifier for multiple objects, starting from scratch. At the end of this tutorial, you will have basics and a program that can identify and draw boxes around specific objects in computer screen.
 
@@ -95,4 +95,4 @@ jupyter notebook
 In your [browser](http://localhost:8888/tree) click on „object_detection_tutorial.ipynb“. Then navigate to „Cell“ in navigation bar and click on „Run All“. If everything is fine in short time you should see these nice photos:
 ![alt text](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/dog.jpg)
 ![alt text](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/kite.jpg)
-### Original text version of tutorial you can visit [here](http://pylessons/Tensorflow-object-detection-installation/).
+### Original text version of tutorial you can visit [here](http://pylessons.com/Tensorflow-object-detection-installation/).
