@@ -1,4 +1,4 @@
-# TensorFlow Object Detection merged with grabscreen
+# TensorFlow Object Detection merged with grabscreen part #1
 
 This is third part of our CS:GO object detection tutorial. In this part we are going to merge jupyter API code from 1-st tutorial with code from 2-nd tutorial where we tested 3 different ways of grabbing screen.
 
@@ -142,6 +142,56 @@ with detection_graph.as_default():
       #plt.figure(figsize=IMAGE_SIZE)
       #plt.imshow(image_np)
       cv2.imshow(title, cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB))
+      fps+=1
+      TIME = time.time() - start_time
+      if (TIME) >= display_time :
+        print("FPS: ", fps / (TIME))
+        fps = 0
+        start_time = time.time()
+      # Press "q" to quit
+      if cv2.waitKey(25) & 0xFF == ord("q"):
+        cv2.destroyAllWindows()
+        break
+```
+# TensorFlow Object Detection merged with grabscreen part #2
+
+In previous tutorial we ran actual pretrained object detection, but our code is messy and detection was working really slow. In this part we are cleaning the messy code and making some code modifications that our object detection would work in much faster way.
+
+At first I went through all code and deleted all unecassary code, so instead of using ```object_detection_tutorial_grabscreen.py```, better take ```object_detection_tutorial_grabscreen_pretty.py``` it will be much easier to understand how it works. 
+
+After cleaning the code, I started to make some changes to it. Mainly what I done is that I deleted ```def run_inference_for_single_image(image, graph):``` function and added needed lines to main while loop, and this changed object detection speed. Not taking into details I will upload code part I changed:
+```
+# # Detection
+with detection_graph.as_default():
+  with tf.Session(graph=detection_graph) as sess:
+    while True:
+      # Get raw pixels from the screen, save it to a Numpy array
+      image_np = np.array(sct.grab(monitor))
+      # To get real color we do this:
+      image_np = cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB)
+      # Expand dimensions since the model expects images to have shape: [1, None, None, 3]
+      image_np_expanded = np.expand_dims(image_np, axis=0)
+      # Actual detection.
+      image_tensor = detection_graph.get_tensor_by_name('image_tensor:0')
+      boxes = detection_graph.get_tensor_by_name('detection_boxes:0')
+      scores = detection_graph.get_tensor_by_name('detection_scores:0')
+      classes = detection_graph.get_tensor_by_name('detection_classes:0')
+      num_detections = detection_graph.get_tensor_by_name('num_detections:0')
+      # Visualization of the results of a detection.
+      (boxes, scores, classes, num_detections) = sess.run(
+          [boxes, scores, classes, num_detections],
+          feed_dict={image_tensor: image_np_expanded})
+      vis_util.visualize_boxes_and_labels_on_image_array(
+          image_np,
+          np.squeeze(boxes),
+          np.squeeze(classes).astype(np.int32),
+          np.squeeze(scores),
+          category_index,
+          use_normalized_coordinates=True,
+          line_thickness=3)
+      # Show image with detection
+      cv2.imshow(title, cv2.cvtColor(image_np, cv2.COLOR_BGR2RGB))
+      # Bellow we calculate our FPS
       fps+=1
       TIME = time.time() - start_time
       if (TIME) >= display_time :
