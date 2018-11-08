@@ -93,6 +93,6 @@ If everything was fine you can test it out and verify your installation is worki
 jupyter notebook
 ```
 In your [browser](http://localhost:8888/tree) click on „object_detection_tutorial.ipynb“. Then navigate to „Cell“ in navigation bar and click on „Run All“. If everything is fine in short time you should see these nice photos:
-![alt text](https://raw.githubusercontent.com/pythonlessons/TensorFlow-object-detection-tutorial/master/0_part/dog.jpg)
-![alt text](https://raw.githubusercontent.com/pythonlessons/TensorFlow-object-detection-tutorial/master/0_part/kite.jpg)
+![alt text](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/dog.jpg)
+![alt text](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/kite.jpg)
 ### Original text version of tutorial you can visit [here](http://pylessons/Tensorflow-object-detection-installation/).
