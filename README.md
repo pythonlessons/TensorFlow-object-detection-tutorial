@@ -21,7 +21,7 @@ Main computer specs for this tutorial:
 *	CPU – i5-6400
 *	RAM – 16GB
 
-[![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part images/1_YouTube.JPG)](http://www.youtube.com/watch?v=HX2yXajg8Ts "TensorFlow-GPU 1.11 and Object-Detection Install Guide - How to Install for Windows")
+[![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/1_YouTube.JPG)](http://www.youtube.com/watch?v=HX2yXajg8Ts "TensorFlow-GPU 1.11 and Object-Detection Install Guide - How to Install for Windows")
 
 ## TensorFlow-GPU 1.11, CUDA v9.0, cuDNN v7.3.1 installation
 Hardware requirements: 
