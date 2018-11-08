@@ -1,5 +1,5 @@
 # Python grab screen tutorial
-### Original text version of tutorial you can visit [here](http://pylessons/Tensorflow-object-detection-grab-screen/).
+### Original text version of tutorial you can visit [here](http://pylessons.com/Tensorflow-object-detection-grab-screen/).
 
 [![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/2_YouTube.JPG)](https://www.youtube.com/watch?v=Wc2gFarBEE0 "TensorFlow object detection tutorial how to grab a screen")
 
@@ -118,4 +118,4 @@ screen_recordMSS()
 #screen_grab()
 ```
 In this short tutorial we learned 3 different ways to grab computer screen. It's sad that maximum performance we can get is around 20 FPS, but this is the best I found right now. If someone know better ways how to get more FPS, please let me know. So now we can move to another TensorFlow tutorials.
-### Original text version of tutorial you can visit [here](http://pylessons/Tensorflow-object-detection-grab-screen/).
+### Original text version of tutorial you can visit [here](http://pylessons.com/Tensorflow-object-detection-grab-screen/).
