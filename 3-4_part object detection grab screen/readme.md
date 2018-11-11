@@ -1,5 +1,7 @@
 # TensorFlow Object Detection merged with grabscreen part #1
 
+[![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/3_YouTube.JPG)](http://www.youtube.com/watch?v=X1kBo_h0J2s "TensorFlow real time car object detection merged with desktop grab screen")
+
 This is third part of our CS:GO object detection tutorial. In this part we are going to merge jupyter API code from 1-st tutorial with code from 2-nd tutorial where we tested 3 different ways of grabbing screen.
 
 To begin, we're going to modify the notebook first by converting it to a .py file. If you want to keep it in a notebook, that's fine too. To convert, you can go to file > download as > python file. Once that's done, we're going to comment out the lines we don't need.
