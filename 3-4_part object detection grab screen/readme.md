@@ -1,4 +1,5 @@
 # TensorFlow Object Detection merged with grabscreen part #1
+### Original text version of tutorial you can visit [here](http://pylessons.com/Tensorflow-object-detection-installation/).
 
 [![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/3_YouTube.JPG)](http://www.youtube.com/watch?v=X1kBo_h0J2s "TensorFlow real time car object detection merged with desktop grab screen")
 
