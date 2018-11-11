@@ -155,7 +155,9 @@ with detection_graph.as_default():
         cv2.destroyAllWindows()
         break
 ```
+So I tried to use this slow object detection method on image where you can see crowd of people walking across the street:
 ![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/crowd-walking.jpg)
+And here is the results of frames per second working with TensorFlow CPU version. In average it is about 7 seconds to receive one frame per second. So if we would like to use it for real time purpose, this would be impossible to do something usefull with it. So we need to make it work much faster, we are doing so in second part below.
 ![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/FPS%20slow.JPG)
 
 # TensorFlow Object Detection merged with grabscreen part #2
