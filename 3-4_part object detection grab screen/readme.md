@@ -157,6 +157,8 @@ with detection_graph.as_default():
 ```
 # TensorFlow Object Detection merged with grabscreen part #2
 
+[![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/4_YouTube.JPG)](http://www.youtube.com/watch?v=fUbjXsMovtM "TensorFlow realtime object detection making it to work fast")
+
 In previous tutorial we ran actual pretrained object detection, but our code is messy and detection was working really slow. In this part we are cleaning the messy code and making some code modifications that our object detection would work in much faster way.
 
 At first I went through all code and deleted all unecassary code, so instead of using ```object_detection_tutorial_grabscreen.py```, better take ```object_detection_tutorial_grabscreen_pretty.py``` it will be much easier to understand how it works. 
