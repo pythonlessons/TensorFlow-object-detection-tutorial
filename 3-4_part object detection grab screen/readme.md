@@ -155,6 +155,8 @@ with detection_graph.as_default():
         cv2.destroyAllWindows()
         break
 ```
+![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/FPS%20slow.JPG)
+
 # TensorFlow Object Detection merged with grabscreen part #2
 
 [![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/4_YouTube.JPG)](http://www.youtube.com/watch?v=fUbjXsMovtM "TensorFlow realtime object detection making it to work fast")
