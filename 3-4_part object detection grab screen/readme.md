@@ -209,3 +209,4 @@ with detection_graph.as_default():
         cv2.destroyAllWindows()
         break
 ```
+![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/FPS%20fast.JPG)
