@@ -120,6 +120,6 @@ If everything has been set up correctly, TensorFlow will initialize the training
 </p>
     
 <p align="center">
-    <img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/LOSS%graph.jpg"
+    <img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/LOSS%20graph.jpg"
 </p>
 That’s all for this tutorial, in next tutorial we'll test our model.
