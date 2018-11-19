@@ -31,4 +31,7 @@ LabelImg saves a .xml file containing the label data for each image. These .xml 
 
 Once you have labeled your images, we're going to separate them into training and testing groups. To do this, just copy about 20% of your images and their annotation XML files to a new dir called test and then copy the remaining ones to a new dir called train.
 
-With the images labeled, it’s time to generate the TFRecords that serve as input data to the TensorFlow training model. This tutorial uses the xml_to_csv.py and generate_tfrecord.py scripts from <b>EdjeElectronics</b> repository, with some slight modifications to work with our directory structure.
+With the images labeled, it’s time to generate the TFRecords that serve as input data to the TensorFlow training model. This tutorial uses the xml_to_csv.py and generate_tfrecord.py scripts from [<b>EdjeElectronics</b>](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10) repository, with some slight modifications to work with our directory structure.
+
+First, the image .xml data will be used to create .csv files containing all the data for the train and test images. From the main folder, if you are using the same file structure issue the following command in command prompt: ```<b>python xml_to_csv.py</b>```.
+
