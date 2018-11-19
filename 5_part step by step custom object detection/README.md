@@ -18,7 +18,7 @@ TensorFlow needs hundreds of images of an object to train a good detection class
 
 In my classifier, I will use four different objects I want to detect (terrorist, terrorist head, counter-terrorist and counter-terrorist head). I used to play CSGO with harmless bots to gather hundreds of these images playing on few different game maps, also I was grabbing some pictures from google, to make them different from my game. 
 
-### Label Pictures
+### Label Pictures:
 
 Here comes the best part. With all the pictures gathered, it’s time to label the desired objects in every picture. LabelImg is a great tool for labeling images, and its GitHub page has very clear instructions on how to install and use it.
 
@@ -36,3 +36,84 @@ With the images labeled, it’s time to generate the TFRecords that serve as inp
 
 First, the image .xml data will be used to create .csv files containing all the data for the train and test images. From the main folder, if you are using the same file structure issue the following command in command prompt: <b>```python xml_to_csv.py```</b>.
 
+This creates a train_labels.csv and test_labels.csv file in the <b>CSGO_images</b> folder. If you are using different files structure, please change <b>```xml_to_csv.py```</b> accordingly. To avoid of using cmd I created short .bat script called <b>```xml_to_csv.bat```</b>.
+
+Next, open the <b>generate_tfrecord.py</b> file in a text editor, this file I also took from [<b>EdjeElectronics</b>](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10) repository. Replace the label map with your own label map, where each object is assigned with an ID number. This same number assignment will be used when configuring the <b>```labelmap.pbtxt```</b> file.
+
+For example, if you are training your own classifier, you will replace the following code in ```generate_tfrecord.py```:
+```
+# TO-DO replace this with label map
+def class_text_to_int(row_label):
+    if row_label == 'c':
+        return 1
+    elif row_label == 'ch':
+        return 2
+    elif row_label == 't':
+        return 3
+    elif row_label == 'th':
+        return 4
+    else:
+        return None
+```
+
+Then, generate the TFRecord files by starting my created ```generate_tfrecord.bat``` file, which is issuing these commands from local folder:
+```
+python generate_tfrecord.py --csv_input=CSGO_images\train_labels.csv --image_dir= CSGO_images \train --output_path= CSGO_images\train.record
+python generate_tfrecord.py --csv_input= CSGO_images \test_labels.csv --image_dir= CSGO_images \test --output_path= CSGO_images\test.record
+```
+
+These lines generates a ```train.record``` and a ```test.record``` files in training folder. These will be used to train the new object detection classifier.
+
+The last thing to do before training is to create a label map and edit the training configuration file. The label map tells the trainer what each object is by defining a mapping of class names to class ID numbers. Use a text editor to create a new file and save it as ```labelmap.pbtxt``` in the training folder. (Make sure the file type is ```.pbtxt```). In the text editor, copy or type the label map in the same format as below (the example below is the label map for my CSGO detector). The label map ID numbers should be the same as defined in the ```generate_tfrecord.py``` file.
+```
+item {
+  id: 1
+  name: 'c'
+}
+
+item {
+  id: 2
+  name: 'ch'
+}
+
+item {
+  id: 3
+  name: 't'
+}
+
+item {
+  id: 4
+  name: 'th'
+}
+```
+
+### Configure training:
+Finally, the object detection training pipeline must be configured. It defines which model and what parameters will be used for training. This is the last step before running actual training.
+
+Navigate to your TensorFlow ```research\object_detection\samples\configs``` directory and copy the ```faster_rcnn_inception_v2_coco.config``` file into the CSGO_training directory. Then, open the file with a text editor, I personally use notepad++. There are needed several changes to make to this ```.config``` file, mainly changing the number of classes, examples and adding the file paths to the training data.
+
+Note: The paths must be entered with single forward slashes "```/```", or TensorFlow will give a file path error when trying to train the model. The paths must be in double quotation marks ( ```"``` ), not single quotation marks ( ```'``` ).
+Line 10. Change num_classes to the number of different objects you want the classifier to detect. For my CSGO object detection it would be num_classes : 4 .
+
+```Line 107.``` Change fine_tune_checkpoint to:
+fine_tune_checkpoint : "faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
+```Lines 122 and 124.``` In the train_input_reader section, change input_path and label_map_path to:
+input_path: "CSGO_images/train.record"
+label_map_path: "CSGO_training/labelmap.pbtxt"
+```Line 128.``` Change num_examples to the number of images you have in the CSGO_images\test directory. I have 113 images, so I change it to: "num_examples: 113"
+```Lines 136 and 138.``` In the eval_input_reader section, change input_path and label_map_path to:
+input_path: "CSGO_images/test.record"
+label_map_path: "CSGO_training/labelmap.pbtxt"
+
+Save the file after the changes have been made. That’s it! The training files are prepared and configured for training. One more step left before training.
+
+### Run the Training:
+I have not been able to get model_main.py to work correctly yet, I run in to errors. However, the train.py file is still available in the /object_detection/legacy folder. Simply move train.py from /object_detection/legacy into the /object_detection folder. Move our created CSGO_images and CSGO_training folders into the /object_detection folder and then continue with following line in cmd from object_detection directory:
+
+```
+python train.py --logtostderr --train_dir=CSGO_training/ --pipeline_config_path= CSGO_training/faster_rcnn_inception_v2_pets.config
+```
+
+If everything has been set up correctly, TensorFlow will initialize the training. The initialization can take up to 30 to 60 seconds before the actual training begins. When training begins, it will look like this:
+
+That’s all for this tutorial, in next tutorial we'll test our model.
