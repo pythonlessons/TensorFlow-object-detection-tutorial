@@ -97,11 +97,11 @@ Line 10. Change num_classes to the number of different objects you want the clas
 
 ```Line 107.``` Change fine_tune_checkpoint to:
 fine_tune_checkpoint : "faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
-```Lines 122 and 124.``` In the train_input_reader section, change input_path and label_map_path to:
+<br>```Lines 122 and 124.``` In the train_input_reader section, change input_path and label_map_path to:
 input_path: "CSGO_images/train.record"
 label_map_path: "CSGO_training/labelmap.pbtxt"
-```Line 128.``` Change num_examples to the number of images you have in the CSGO_images\test directory. I have 113 images, so I change it to: "num_examples: 113"
-```Lines 136 and 138.``` In the eval_input_reader section, change input_path and label_map_path to:
+<br>```Line 128.``` Change num_examples to the number of images you have in the CSGO_images\test directory. I have 113 images, so I change it to: "num_examples: 113"
+<br>```Lines 136 and 138.``` In the eval_input_reader section, change input_path and label_map_path to:
 input_path: "CSGO_images/test.record"
 label_map_path: "CSGO_training/labelmap.pbtxt"
 
