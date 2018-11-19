@@ -22,8 +22,9 @@ In my classifier, I will use four different objects I want to detect (terrorist,
 
 Here comes the best part. With all the pictures gathered, it’s time to label the desired objects in every picture. LabelImg is a great tool for labeling images, and its GitHub page has very clear instructions on how to install and use it.
 
-![LabelImg GitHub link](https://github.com/tzutalin/labelImg)
-![LabelImg download link](https://www.dropbox.com/s/tq7zfrcwl44vxan/windows_v1.6.0.zip?dl=1)
+[LabelImg GitHub link](https://github.com/tzutalin/labelImg)
+
+[LabelImg download link](https://www.dropbox.com/s/tq7zfrcwl44vxan/windows_v1.6.0.zip?dl=1)
 
 Download and install LabelImg, when running this, you should get a GUI window. From here, choose to open dir and pick the directory that you saved all of your images to. Now, you can begin to annotate images with the create rectbox button. Draw your box, add the name in, and hit ok. Save, hit next image, and repeat! You can press the w key to draw the box and do ctrl+s to save faster. For me it took in average 1 hour for 100 images, this depends on object quantity you have in image. Keep in mind, this will take a while!
 
