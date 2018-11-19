@@ -115,5 +115,7 @@ python train.py --logtostderr --train_dir=CSGO_training/ --pipeline_config_path=
 ```
 
 If everything has been set up correctly, TensorFlow will initialize the training. The initialization can take up to 30 to 60 seconds before the actual training begins. When training begins, it will look like this:
-
+<p align="center">
+  ![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/training.jpg)
+</p>
 That’s all for this tutorial, in next tutorial we'll test our model.
