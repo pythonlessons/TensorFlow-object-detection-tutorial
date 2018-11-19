@@ -22,8 +22,8 @@ In my classifier, I will use four different objects I want to detect (terrorist,
 
 Here comes the best part. With all the pictures gathered, it’s time to label the desired objects in every picture. LabelImg is a great tool for labeling images, and its GitHub page has very clear instructions on how to install and use it.
 
-[LabelImg GitHub link](https://github.com/tzutalin/labelImg)
-[LabelImg download link](https://www.dropbox.com/s/tq7zfrcwl44vxan/windows_v1.6.0.zip?dl=1)
+![LabelImg GitHub link](https://github.com/tzutalin/labelImg)
+![LabelImg download link](https://www.dropbox.com/s/tq7zfrcwl44vxan/windows_v1.6.0.zip?dl=1)
 
 Download and install LabelImg, when running this, you should get a GUI window. From here, choose to open dir and pick the directory that you saved all of your images to. Now, you can begin to annotate images with the create rectbox button. Draw your box, add the name in, and hit ok. Save, hit next image, and repeat! You can press the w key to draw the box and do ctrl+s to save faster. For me it took in average 1 hour for 100 images, this depends on object quantity you have in image. Keep in mind, this will take a while!
 
@@ -33,5 +33,5 @@ Once you have labeled your images, we're going to separate them into training an
 
 With the images labeled, it’s time to generate the TFRecords that serve as input data to the TensorFlow training model. This tutorial uses the xml_to_csv.py and generate_tfrecord.py scripts from [<b>EdjeElectronics</b>](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10) repository, with some slight modifications to work with our directory structure.
 
-First, the image .xml data will be used to create .csv files containing all the data for the train and test images. From the main folder, if you are using the same file structure issue the following command in command prompt: ```<b>python xml_to_csv.py</b>```.
+First, the image .xml data will be used to create .csv files containing all the data for the train and test images. From the main folder, if you are using the same file structure issue the following command in command prompt: <b>```python xml_to_csv.py```</b>.
 
