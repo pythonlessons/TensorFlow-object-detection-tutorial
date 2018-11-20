@@ -2,8 +2,6 @@
 
 Welcome to part 5 of the TensorFlow Object Detection API tutorial series. In this part and few in future, we're going to cover how we can track and detect our own custom objects with this API.
 
-[![TensorFlow object detection tutorial](https://img.youtube.com/vi/bYqvx_DM45U/0.jpg)](https://www.youtube.com/watch?v=bYqvx_DM45U "TensorFlow object detection tutorial")
-
 <div align="center">
   <a href="https://www.youtube.com/watch?v=bYqvx_DM45U"><img src="https://img.youtube.com/vi/bYqvx_DM45U/0.jpg" alt="TensorFlow object detection tutorial"></a>
 </div>
