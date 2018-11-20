@@ -96,14 +96,14 @@ Note: The paths must be entered with single forward slashes "```/```", or Tensor
 
 ```Line 10.``` Change num_classes to the number of different objects you want the classifier to detect. For my CSGO object detection it would be num_classes : 4 .
 ```Line 107.``` Change fine_tune_checkpoint to:
-fine_tune_checkpoint : "faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
+<br>fine_tune_checkpoint : "faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
 <br>```Lines 122 and 124.``` In the train_input_reader section, change input_path and label_map_path to:
-input_path: "CSGO_images/train.record"
-label_map_path: "CSGO_training/labelmap.pbtxt"
+<br>input_path: "CSGO_images/train.record"
+<br>label_map_path: "CSGO_training/labelmap.pbtxt"
 <br>```Line 128.``` Change num_examples to the number of images you have in the CSGO_images\test directory. I have 113 images, so I change it to: "num_examples: 113"
 <br>```Lines 136 and 138.``` In the eval_input_reader section, change input_path and label_map_path to:
-input_path: "CSGO_images/test.record"
-label_map_path: "CSGO_training/labelmap.pbtxt"
+<br>input_path: "CSGO_images/test.record"
+<br>label_map_path: "CSGO_training/labelmap.pbtxt"
 
 Save the file after the changes have been made. That’s it! The training files are prepared and configured for training. One more step left before training.
 
