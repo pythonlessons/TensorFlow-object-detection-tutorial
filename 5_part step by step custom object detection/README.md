@@ -121,7 +121,7 @@ If everything has been set up correctly, TensorFlow will initialize the training
 
 In picture above, each step of training reports the loss. It will start high and get lower and lower as training progresses. For my training it started at about 2-3 and quickly dropped below 0.5. I recommend allowing your model to train until the loss consistently drops below 0.05, which may take about 30,000 steps, or about few hours (depends on how powerful your CPU or GPU is). The loss numbers may be different while different model is used. Also it depends from the objects you want to detect.
 
-You can and you should view the progress of the training by using TensorBoard. To do this, open a new window of CMD and change to the C:\TensorFlow\research\object_detection directory (or directory you have) and issue the following command: <br>```C:\TensorFlow\research\object_detection directory (or directory you have) and issue the following command:```
+You can and you should view the progress of the training by using TensorBoard. To do this, open a new window of CMD and change to the C:\TensorFlow\research\object_detection directory (or directory you have) and issue the following command: <br>```C:\TensorFlow\research\object_detection>tensorboard --logdir=CSGO_training```
 
 This will create a local webpage on your local machine at YourPCName:6006, which can be viewed through a web browser. The TensorBoard page provides information and graphs that show how the training is progressing. One of the most important graph is the Loss graph, which shows the overall loss of the classifier over time:
 <p align="center">
