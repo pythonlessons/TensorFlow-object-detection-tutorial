@@ -4,6 +4,10 @@ Welcome to part 5 of the TensorFlow Object Detection API tutorial series. In thi
 
 [![TensorFlow object detection tutorial](https://img.youtube.com/vi/bYqvx_DM45U/0.jpg)](https://www.youtube.com/watch?v=bYqvx_DM45U "TensorFlow object detection tutorial")
 
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=bYqvx_DM45U"><img src="https://img.youtube.com/vi/bYqvx_DM45U/0.jpg" alt="TensorFlow object detection tutorial"></a>
+</div>
+
 I am doing this by using the pre-built model to add custom detection objects to it. That’s a decent jump from my findings, and it’s quite hard to locate any full step-by-step tutorials, so hopefully I can help you with that. Once you finish this tutorial you will have the ability to train for any custom object you can think of (and create data for) - that’s an awesome skill to have in my opinion.
 
 Alright, so this is my overview of the steps needed to do in this tutorial:
