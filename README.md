@@ -98,7 +98,7 @@ In your [browser](http://localhost:8888/tree) click on „object_detection_tutor
 ### Original text version of tutorial you can visit [here](http://pylessons.com/Tensorflow-object-detection-installation/).
 
 
-# Part 3 TensorFlow Object Detection merged with grabscreen part #1
+# Part 3. TensorFlow Object Detection merged with grabscreen part #1
 In this part we are going to merge jupyter API code from 1-st tutorial with code from 2-nd tutorial where we tested 3 different ways of grabbing screen.
 
 To begin, we're going to modify the notebook first by converting it to a .py file. If you want to keep it in a notebook, that's fine too. To convert, you can go to file > download as > python file. Once that's done, we're going to comment out the lines we don't need.
@@ -260,7 +260,7 @@ So I tried to use this slow object detection method on image where you can see c
 And here is the results of frames per second working with TensorFlow CPU version. In average, it is about 7 seconds to receive one frame per second. So if we would like to use it for real time purpose, this would be impossible to do something useful with it. So we need to make it work much faster, we are doing so in second part below.
 ![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/FPS%20slow.JPG)
 
-# Part 4 TensorFlow Object Detection merged with grabscreen part #2
+# Part 4. TensorFlow Object Detection merged with grabscreen part #2
 
 In previous part we ran actual pretrained object detection, but our code is messy and detection was working really slow. In this part we are cleaning the messy code and making some code modifications that our object detection would work in much faster way.
 
@@ -314,7 +314,7 @@ with detection_graph.as_default():
 Same as in 3-rd part, we are testing how fast it is working. To compare results we got in 3-rd tutorial part we are taking the same picture, with the same object count in it. In bellow image, you can see significant difference comparing what we had before, it is in average 1 FPS. If you will run it on GPU you will get from 5 to 10 times boost.
 ![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/FPS%20fast.JPG)
 
-# Part 5 TensorFlow Object Detection step by step custom object detection tutorial
+# Part 5. TensorFlow Object Detection step by step custom object detection tutorial
 
 Welcome to part 5 of the TensorFlow Object Detection API tutorial series. In this part and few in future, we're going to cover how we can track and detect our own custom objects with this API.
 
