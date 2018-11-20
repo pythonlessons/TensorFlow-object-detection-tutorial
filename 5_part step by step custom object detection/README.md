@@ -1,4 +1,5 @@
 # TensorFlow Object Detection step by step custom object detection tutorial
+### Original text version of tutorial you can visit [here](Tensorflow-object-detection-step-by-step-custom-object-detection/).
 
 Welcome to part 5 of the TensorFlow Object Detection API tutorial series. In this part and few in future, we're going to cover how we can track and detect our own custom objects with this API.
 
@@ -135,3 +136,4 @@ This will create a local webpage on your local machine at YourPCName:6006, which
 The training routine periodically saves checkpoints about every ten minutes. You can terminate the training by pressing Ctrl+C while in the command prompt window. I usually wait until checkpoint has been saved to terminate the training. Then you can terminate training and start it later, and it will restart from the last saved checkpoint. 
 
 That’s all for this tutorial, in next tutorial checkpoint at the highest number of steps will be used to generate the frozen inference graph and test it out
+### Original text version of tutorial you can visit [here](Tensorflow-object-detection-step-by-step-custom-object-detection/).
