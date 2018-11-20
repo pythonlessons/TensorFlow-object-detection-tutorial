@@ -98,8 +98,8 @@ Navigate to your TensorFlow ```research\object_detection\samples\configs``` dire
 
 Note: The paths must be entered with single forward slashes "```/```", or TensorFlow will give a file path error when trying to train the model. The paths must be in double quotation marks ( ```"``` ), not single quotation marks ( ```'``` ).
 
-```Line 10.``` Change num_classes to the number of different objects you want the classifier to detect. For my CSGO object detection it would be num_classes : 4 .
-```Line 107.``` Change fine_tune_checkpoint to:
+```Line 10.``` Change num_classes to the number of different objects you want the classifier to detect. For my CSGO object detection it would be num_classes : 4
+<br>```Line 107.``` Change fine_tune_checkpoint to:
 <br>fine_tune_checkpoint : "faster_rcnn_inception_v2_coco_2018_01_28/model.ckpt"
 <br>```Lines 122 and 124.``` In the train_input_reader section, change input_path and label_map_path to:
 <br>input_path: "CSGO_images/train.record"
