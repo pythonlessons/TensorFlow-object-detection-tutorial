@@ -1,0 +1,38 @@
+<annotation>
+	<folder>csgo screenshots</folder>
+	<filename>cs_go_ak_47_by_nexsusair143-d87j91a.jpg</filename>
+	<path>C:\Users\HOME\Desktop\csgo screenshots\cs_go_ak_47_by_nexsusair143-d87j91a.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1191</width>
+		<height>670</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>th</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>477</xmin>
+			<ymin>66</ymin>
+			<xmax>549</xmax>
+			<ymax>179</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>t</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>389</xmin>
+			<ymin>67</ymin>
+			<xmax>614</xmax>
+			<ymax>651</ymax>
+		</bndbox>
+	</object>
+</annotation>
