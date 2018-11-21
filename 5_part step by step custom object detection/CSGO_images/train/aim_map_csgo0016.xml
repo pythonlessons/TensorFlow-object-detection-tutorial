@@ -1,0 +1,38 @@
+<annotation>
+	<folder>csgo images</folder>
+	<filename>aim_map_csgo0016.jpg</filename>
+	<path>C:\Users\HOME\Desktop\csgo screenshots\csgo images\aim_map_csgo0016.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1366</width>
+		<height>768</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>c</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>660</xmin>
+			<ymin>315</ymin>
+			<xmax>725</xmax>
+			<ymax>469</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>ch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>685</xmin>
+			<ymin>314</ymin>
+			<xmax>713</xmax>
+			<ymax>342</ymax>
+		</bndbox>
+	</object>
+</annotation>

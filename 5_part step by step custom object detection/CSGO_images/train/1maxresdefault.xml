@@ -1,0 +1,38 @@
+<annotation>
+	<folder>csgo screenshots</folder>
+	<filename>1maxresdefault.jpg</filename>
+	<path>C:\Users\HOME\Desktop\csgo screenshots\1maxresdefault.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1280</width>
+		<height>720</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>ch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>660</xmin>
+			<ymin>7</ymin>
+			<xmax>1007</xmax>
+			<ymax>340</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>c</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>542</xmin>
+			<ymin>4</ymin>
+			<xmax>1265</xmax>
+			<ymax>720</ymax>
+		</bndbox>
+	</object>
+</annotation>

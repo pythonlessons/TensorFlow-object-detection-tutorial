@@ -1,0 +1,38 @@
+<annotation>
+	<folder>csgo screenshots</folder>
+	<filename>4f67447c34370eb99c136ff472fa5093-1200-80.jpg</filename>
+	<path>C:\Users\HOME\Desktop\csgo screenshots\4f67447c34370eb99c136ff472fa5093-1200-80.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>450</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>t</name>
+		<pose>Unspecified</pose>
+		<truncated>1</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>240</xmin>
+			<ymin>27</ymin>
+			<xmax>569</xmax>
+			<ymax>450</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>th</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>359</xmin>
+			<ymin>27</ymin>
+			<xmax>471</xmax>
+			<ymax>165</ymax>
+		</bndbox>
+	</object>
+</annotation>
