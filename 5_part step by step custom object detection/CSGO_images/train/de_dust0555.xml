@@ -1,0 +1,38 @@
+<annotation>
+	<folder>csgo screenshots</folder>
+	<filename>de_dust0555.jpg</filename>
+	<path>C:\Users\HOME\Desktop\csgo screenshots\de_dust0555.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>1920</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>c</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>925</xmin>
+			<ymin>508</ymin>
+			<xmax>983</xmax>
+			<ymax>681</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>ch</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>957</xmin>
+			<ymin>509</ymin>
+			<xmax>984</xmax>
+			<ymax>546</ymax>
+		</bndbox>
+	</object>
+</annotation>
