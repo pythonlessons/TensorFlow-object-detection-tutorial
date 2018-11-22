@@ -1,0 +1,38 @@
+<annotation verified="yes">
+	<folder>csgo screenshots</folder>
+	<filename>Ramps-up-the-rank-through-CSGO-boost.jpg</filename>
+	<path>C:\Users\HOME\Desktop\csgo screenshots\Ramps-up-the-rank-through-CSGO-boost.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>878</width>
+		<height>494</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>th</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>370</xmin>
+			<ymin>20</ymin>
+			<xmax>528</xmax>
+			<ymax>204</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>t</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>255</xmin>
+			<ymin>9</ymin>
+			<xmax>690</xmax>
+			<ymax>493</ymax>
+		</bndbox>
+	</object>
+</annotation>
