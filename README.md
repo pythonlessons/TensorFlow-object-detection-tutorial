@@ -446,8 +446,6 @@ This will create a local webpage on your local machine at YourPCName:6006, which
 
 The training routine periodically saves checkpoints about every ten minutes. You can terminate the training by pressing Ctrl+C while in the command prompt window. I usually wait until checkpoint has been saved to terminate the training. Then you can terminate training and start it later, and it will restart from the last saved checkpoint. 
 
-That’s all for this tutorial, in next tutorial checkpoint at the highest number of steps will be used to generate the frozen inference graph and test it out
-
 # Part 6. TensorFlow Object Detection CSGO actual object detection
 ### CSGO_frozen_inference_graph.pb download [link](https://drive.google.com/open?id=1U6JBcTKPEG9pxviCidVhkPe459XSJlXm).
 
