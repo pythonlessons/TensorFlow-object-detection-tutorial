@@ -448,7 +448,7 @@ The training routine periodically saves checkpoints about every ten minutes. You
 
 That’s all for this tutorial, in next tutorial checkpoint at the highest number of steps will be used to generate the frozen inference graph and test it out
 
-# TensorFlow Object Detection CSGO actual object detection
+# Part 6. TensorFlow Object Detection CSGO actual object detection
 ### CSGO_frozen_inference_graph.pb download [link](https://drive.google.com/open?id=1U6JBcTKPEG9pxviCidVhkPe459XSJlXm).
 
 Welcome to part 6 of our TensorFlow Object Detection API tutorial series. In this part, we're going to export inference graph and detect our own custom objects.
