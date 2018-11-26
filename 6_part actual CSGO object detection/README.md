@@ -20,13 +20,13 @@ python export_inference_graph.py --input_type image_tensor --pipeline_config_pat
 This creates a frozen_inference_graph.pb file in the /object_detection/CSGO_inference_graph folder. The .pb file contains the object detection classifier. Rename it to CSGO_frozen_inference_graph.pb and move it to your main working folder. Also take same labelmap file as you used for training, in my case I renamed it to CSGO_labelmap.pbtxt. Then I took ```object_detection_tutorial_grabscreen_faster.py``` my code from my own 4th tutorial and renamed it to CSGO_object_detection and changed few lines, that it could work for us:
 
 Changed line 39 to my frozen inference graph file.
-```PATH_TO_FROZEN_GRAPH = 'CSGO_frozen_inference_graph.pb'```
+<br>```PATH_TO_FROZEN_GRAPH = 'CSGO_frozen_inference_graph.pb'```
 
 Changed line 41 to my labelmap file.
-```PATH_TO_LABELS = 'CSGO_labelmap.pbtxt'```
+<br>```PATH_TO_LABELS = 'CSGO_labelmap.pbtxt'```
 
 And lastly before running the Python scripts, you need to modify the line 42 NUM_CLASSES variable in the script to equal the number of classes we want to detect. I am using only 4 classes, so I changed it to 4:
-```NUM_CLASSES = 4```
+<br>```NUM_CLASSES = 4```
 
 If everything is working properly, the object detector will initialize for about 10 (for GPU may take a little longer) seconds and then display a custom window size showing objects it’s detected in the image, in our case it's detecting players in CSGO game.
 
