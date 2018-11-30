@@ -31,12 +31,11 @@ def Shoot(mid_x, mid_y):
 ```
 
 Next, we are improving our code, while working in our main while loop. So we create following for loop. At first we initialize array_ch array, where we will place all our ch objects. Then we are going through boxes[0] array, and if we find our needed classes we search further. For example in our case classes[0][i] == 2 is equal to ch and if scores[0][i] >= 0.5 of this class is equal or more that 50 percent we detected our object. In this case we are taking boxes array numbers, where:
-```
-boxes[0][i][0] – y axis upper start coordinates
+```boxes[0][i][0] – y axis upper start coordinates
 boxes[0][i][1] – x axis left start coordinates
 boxes[0][i][2] – y axis down start coordinates
-boxes[0][i][3] – x axis right start coordinates
-```
+boxes[0][i][3] – x axis right start coordinates```
+
 While subtracting same axis start coordinates and dividing them by two we receive center of two axis. This way we can calculate center of our detected rectangle.
 And at the last line we are drawing a dot in a center.
 
