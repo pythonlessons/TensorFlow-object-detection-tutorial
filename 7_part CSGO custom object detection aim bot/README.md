@@ -8,7 +8,7 @@ Welcome to part 7 of our TensorFlow Object Detection API tutorial series. In thi
   <a href="https://www.youtube.com/watch?v=nJ3p96TevMw" target="_blank"><img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/6_YouTube.JPG" alt="TensorFlow object detection tutorial"></a>
 </div>
 
-In this tutorial are working with same files as we got in 6th [tutorial] (https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/tree/master/6_part%20actual%20CSGO%20object%20detection). To achieve desired goals for this tutorial we’ll need to add several lines to the code. At first we start with importing pyautogui library:
+In this tutorial are working with same files as we got in 6th [tutorial](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/tree/master/6_part%20actual%20CSGO%20object%20detection). To achieve desired goals for this tutorial we’ll need to add several lines to the code. At first we start with importing pyautogui library:
 ```
 import pyautogui
 ```
