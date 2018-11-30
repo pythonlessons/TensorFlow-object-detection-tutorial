@@ -5,7 +5,7 @@
 Welcome to part 7 of our TensorFlow Object Detection API tutorial series. In this part, we're going to change our code, that we could find center of rectangles on our enemies, move our mouse to the center and shoot them.
 
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=nJ3p96TevMw" target="_blank"><img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/7_YouTube.JPG" alt="TensorFlow object detection tutorial"></a>
+  <a href="https://www.youtube.com/watch?v=nJ3p96TevMw" target="_blank"><img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/7_YouTube.jpg" alt="TensorFlow object detection tutorial"></a>
 </div><br>
 
 In this tutorial we are working with same files as we used in 6th [tutorial](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/tree/master/6_part%20actual%20CSGO%20object%20detection). To achieve desired goals for this tutorial we’ll need to add several lines to the code. At first we start with importing pyautogui library:
