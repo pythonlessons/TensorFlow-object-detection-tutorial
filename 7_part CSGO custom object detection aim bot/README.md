@@ -1,4 +1,4 @@
-# TensorFlow CS:GO custom object detection aim bot
+# TensorFlow CS:GO custom object detection aim bot 
 ### Original text version of tutorial you can visit [here](http://pylessons.com/Tensorflow-object-detection-csgo-aim-bot).
 ### Use the same CSGO_frozen_inference_graph.pb download [link](https://drive.google.com/open?id=1U6JBcTKPEG9pxviCidVhkPe459XSJlXm).
 
