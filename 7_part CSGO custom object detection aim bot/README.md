@@ -14,7 +14,7 @@ import pyautogui
 ```
 This library will be used to move our mouse in game. But some games may not allow you to move mouse, then you will need to start python script with administrator rights, same as I am doing for CSGO in my YouTube video tutorial.
 
-Next we are changing defined monitor size line to following. We are doing this because we will use our window width and height in other places to calculate right coordinates for our game. So to avoid mistakes and not to write same values in many places, we are defining our window size accordingly:
+<br>Next we are changing defined monitor size line to following. We are doing this because we will use our window width and height in other places to calculate right coordinates for our game. So to avoid mistakes and not to write same values in many places, we are defining our window size accordingly:
 ```
 width = 800
 height = 640
