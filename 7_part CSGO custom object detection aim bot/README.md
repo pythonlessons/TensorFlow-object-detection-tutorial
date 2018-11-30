@@ -93,4 +93,4 @@ If we would like to shoot to counter-terrorists we change "t" to "c" at first li
 <br>This was only a short explanation of code, full code you can download from above files.
 In my YouTube video you can see how my CSGO aim bot model is working. For now, I am really disappointed about our FPS, because no one can play at these numbers... But I am glad that our bot can target to enemies quite accurate and shoot them. So maybe for next tutorial I will think what we could do to make it work faster for us.
 
-
+### Original text version of tutorial you can visit [here](http://pylessons.com/Tensorflow-object-detection-csgo-aim-bot).
