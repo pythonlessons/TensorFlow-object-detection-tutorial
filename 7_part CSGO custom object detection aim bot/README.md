@@ -14,14 +14,14 @@ import pyautogui
 ```
 This library will be used to move our mouse in game. But some games may not allow you to move mouse, then you will need to start python script with administrator rights, same as I am doing for CSGO in my YouTube video tutorial.
 
-Next we are changing defined monitor size line to following. We are doing this because we will use our window width and height in other places to calculate right coordinates for our game. So to avoid mistakes and not to write same values in many places, we are defining our window size accordingly:
+<br>Next we are changing defined monitor size line to following. We are doing this because we will use our window width and height in other places to calculate right coordinates for our game. So to avoid mistakes and not to write same values in many places, we are defining our window size accordingly:
 ```
 width = 800
 height = 640
 monitor = {"top": 80, "left": 0, "width": width, "height": height}
 ```
 
-Before moving to our main while loop we are defining new function, which we'll use to aim and shoot enemies. As you can see in following function, we are calculating y differently from x. In my YouTube tutorial we’ll see that when we are calculating y in same way as x, we are shooting above the head. So we are removing that difference dividing our desired screen height by 9 and adding it to standard y height. 
+<br>Before moving to our main while loop we are defining new function, which we'll use to aim and shoot enemies. As you can see in following function, we are calculating y differently from x. In my YouTube tutorial we’ll see that when we are calculating y in same way as x, we are shooting above the head. So we are removing that difference dividing our desired screen height by 9 and adding it to standard y height. 
 ```
 def Shoot(mid_x, mid_y):
   x = int(mid_x*width)
@@ -45,7 +45,7 @@ for i,b in enumerate(boxes[0]):
       cv2.circle(image_np,(int(mid_x*width),int(mid_y*height)), 3, (0,0,255), -1)
 ```
 
-These few line of code were only for one object, we do this for all four objects:
+<br>These few line of code were only for one object, we do this for all four objects:
 ```
 for i,b in enumerate(boxes[0]):
   if classes[0][i] == 2: # ch
@@ -74,7 +74,7 @@ for i,b in enumerate(boxes[0]):
       cv2.circle(image_np,(int(mid_x*width),int(mid_y*height)), 3, (50,150,255), -1)
 ```
 
-After this we are making shooting function. So as a team = "t" we choose who we will be shooting at, at this case we are trying to shoot terrorists. So at first we check if we have detected terrorists heads, if we have detected at least one head, we call ```Shoot(mid_x, mid_y)``` function with needed coordinates. If we don't have heads detected we check maybe we have detected terrorists bodies, if we did, we call the same shooting function. Otherwise we don't call Shooting function.
+<br>After this we are making shooting function. So as a team = "t" we choose who we will be shooting at, at this case we are trying to shoot terrorists. So at first we check if we have detected terrorists heads, if we have detected at least one head, we call ```Shoot(mid_x, mid_y)``` function with needed coordinates. If we don't have heads detected we check maybe we have detected terrorists bodies, if we did, we call the same shooting function. Otherwise we don't call Shooting function.
 ```
 team = "t"
 if team == "c":
@@ -90,7 +90,7 @@ if team == "t":
 ```
 If we would like to shoot to counter-terrorists we change "t" to "c" at first line.
 
-This was only a short explanation of code, full code you can download from above files.
+<br>This was only a short explanation of code, full code you can download from above files.
 In my YouTube video you can see how my CSGO aim bot model is working. For now, I am really disappointed about our FPS, because no one can play at these numbers... But I am glad that our bot can target to enemies quite accurate and shoot them. So maybe for next tutorial I will think what we could do to make it work faster for us.
 
 
