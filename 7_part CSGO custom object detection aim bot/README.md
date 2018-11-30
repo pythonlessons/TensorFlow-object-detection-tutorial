@@ -17,9 +17,11 @@ This library will be used to move our mouse in game. But some games may not allo
 <br>
 Next we are changing defined monitor size line to following. We are doing this because we will use our window width and height in other places to calculate right coordinates for our game. So to avoid mistakes and not to write same values in many places, we are defining our window size accordingly:
 ```
-width = 800
-height = 640
-monitor = {'top': 80, 'left': 0, 'width': width, 'height': height}
+def Shoot(mid_x, mid_y):
+  x = int(mid_x*width)
+  y = int(mid_y*height+height/9)
+  pyautogui.moveTo(x,y)
+  pyautogui.click()
 ```
 
 <br>Before moving to our main while loop we are defining new function, which we'll use to aim and shoot enemies. As you can see in following function, we are calculating y differently from x. In my YouTube tutorial we’ll see that when we are calculating y in same way as x, we are shooting above the head. So we are removing that difference dividing our desired screen height by 9 and adding it to standard y height. 
