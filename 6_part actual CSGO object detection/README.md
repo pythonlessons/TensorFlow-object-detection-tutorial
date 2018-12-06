@@ -13,7 +13,7 @@ Welcome to part 6 of our TensorFlow Object Detection API tutorial series. In thi
 Now when training is complete, the last step is to generate the frozen inference graph (our detection model). Copy export_inference_graph.py file and paste it to ```/object_detection``` folder, then from command promt issue the following command, where “XXXX” in “model.ckpt-XXXX” should be replaced with the highest-numbered .ckpt file in the training folder:
 
 ```
-python export_inference_graph.py --input_type image_tensor --pipeline_config_path CSGO_training/faster_rcnn_inception_v2_coco.config --trained_checkpoint_prefix CSGO_training/model.ckpt-XXXX --output_directory CSGO_inference_graph
+python export_inference_graph.py --input_type image_tensor --pipeline_config_path CSGO_training/faster_rcnn_inception_v2_coco.config --trained_checkpoint_prefix CSGO_training_dir/model.ckpt-XXXX --output_directory CSGO_inference_graph
 ```
 
 ### Use our trained custom object detection classifier:
