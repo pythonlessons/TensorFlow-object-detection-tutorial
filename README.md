@@ -78,8 +78,9 @@ Transfered files to same TensorFlow directory and ran the following command from
 # From tensorflow/research/
 "C:/TensorFlow/bin/protoc" object_detection/protos/*.proto --python_out=.
 ```
-Finally, run the following command from the C:\ TensorFlow\research directory:
+Finally, run the following command from the C:\TensorFlow\research directory:
 ```
+# From tensorflow/research/
 python setup.py install
 ```
 You can test that you have correctly installed the Tensorflow Object Detection API by running the following command:
