@@ -63,8 +63,8 @@ def class_text_to_int(row_label):
 
 Then, generate the TFRecord files by starting my created ```generate_tfrecord.bat``` file, which is issuing these commands from local folder:
 ```
-python generate_tfrecord.py --csv_input=CSGO_images\train_labels.csv --image_dir= CSGO_images \train --output_path= CSGO_images\train.record
-python generate_tfrecord.py --csv_input= CSGO_images \test_labels.csv --image_dir= CSGO_images \test --output_path= CSGO_images\test.record
+python generate_tfrecord.py --csv_input=CSGO_images\train_labels.csv --image_dir= CSGO_images \train --output_path=CSGO_images\train.record
+python generate_tfrecord.py --csv_input=CSGO_images\test_labels.csv --image_dir= CSGO_images \test --output_path=CSGO_images\test.record
 ```
 
 These lines generates a ```train.record``` and a ```test.record``` files in training folder. These will be used to train the new object detection classifier.
