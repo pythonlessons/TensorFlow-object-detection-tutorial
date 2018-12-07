@@ -68,8 +68,8 @@ When you already have TensorFlow models on your disk, you must add object detect
 
 Configure PYTHONPATH environment variable (in my case):
 ```
-set PYTHONPATH=$PYTHONPATH;C:\TensorFlow \research
-set PYTHONPATH=$PYTHONPATH;C:\TensorFlow \research\slim
+set PYTHONPATH=$PYTHONPATH;C:\TensorFlow\research
+set PYTHONPATH=$PYTHONPATH;C:\TensorFlow\research\slim
 ```
 Next, compile the Protobuf files, which are used by TensorFlow to configure model and training parameters. Unfortunately, the short protoc compilation command posted on TensorFlow’s Object Detection API installation page doesn’t work for me on Windows.
 So I downloaded older 3.4.0 version of protoc from [here](https://github.com/protocolbuffers/protobuf/releases/tag/v3.4.0).
