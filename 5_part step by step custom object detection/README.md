@@ -116,7 +116,7 @@ Save the file after the changes have been made. That’s it! The training files 
 I have not been able to get model_main.py to work correctly yet, I run in to errors. However, the train.py file is still available in the /object_detection/legacy folder. Simply move train.py from /object_detection/legacy into the /object_detection folder. Move our created CSGO_images and CSGO_training folders into the /object_detection folder and then continue with following line in cmd from object_detection directory:
 
 ```
-python train.py --logtostderr --train_dir=CSGO_training/ --pipeline_config_path= CSGO_training/faster_rcnn_inception_v2_pets.config
+python train.py --logtostderr --train_dir=CSGO_training/ --pipeline_config_path=CSGO_training/faster_rcnn_inception_v2_pets.config
 ```
 
 If everything has been set up correctly, TensorFlow will initialize the training. The initialization can take up to 30 to 60 seconds before the actual training begins. When training begins, it will look like this:
