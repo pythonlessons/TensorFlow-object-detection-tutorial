@@ -72,8 +72,8 @@ set PYTHONPATH=$PYTHONPATH;C:\TensorFlow\research
 set PYTHONPATH=$PYTHONPATH;C:\TensorFlow\research\slim
 ```
 Next, compile the Protobuf files, which are used by TensorFlow to configure model and training parameters. Unfortunately, the short protoc compilation command posted on TensorFlow’s Object Detection API installation page doesn’t work for me on Windows.
-So I downloaded older 3.4.0 version of protoc from [here](https://github.com/protocolbuffers/protobuf/releases/tag/v3.4.0).
-Transfered files to same TensorFlow directory and ran the following command from the tensorflow /research/ directory:
+So I downloaded older 3.4.0 version of protoc from [here](https://github.com/protocolbuffers/protobuf/releases/tag/v3.4.0). I am doing stuff on windows so I downloaded protoc-3.4.0-win32.zip version. 
+Transfered files to main TensorFlow directory and run the following command from the tensorflow /research/ directory:
 ```
 # From tensorflow/research/
 "C:/TensorFlow/bin/protoc" object_detection/protos/*.proto --python_out=.
