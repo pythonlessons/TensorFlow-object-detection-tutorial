@@ -32,6 +32,6 @@ In final step, we tooks all files from my 7th tutorial and replaced CSGO_frozen_
 
 Next we tried to play CS:GO and I let my bot to shoot enemies, you can check this out on my YouTube video.
 
-That’s all for this tutorial. With new model it didn't solved FPS problem, it improved sligtly but not that we could play our game. So for future work I decided to learn doing stuff on multiprocessing and run our code processes in parallel. So in next tutorial I will doing stuff with multiprocessing.
+That’s all for this tutorial. With new model I didn't solved FPS problem, it improved performance sligtly but not that we could play our game. So for future work I decided to learn doing stuff on multiprocessing and run our code processes in parallel. So in next tutorial I will be doing stuff with multiprocessing.
 
 ### Original text version of tutorial you can visit [here](http://pylessons.com/).
