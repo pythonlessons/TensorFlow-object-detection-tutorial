@@ -1,7 +1,7 @@
 # TensorFlow CSGO custom object detection faster aim bot
 ### Original text version of tutorial you can visit [here](http://pylessons.com/).
 
-Welcome to part 8 of the TensorFlow Object Detection API tutorial series. In this I will show you how to export newly trained model and we'll test it out.
+Welcome to part 8 of the TensorFlow Object Detection API tutorial series. In this tutorial I will show you how to export newly trained model and we'll test it out.
 
 So in previous tutorial we made a final working model, which shoots enemies, but our FPS were really slow, so I decided to try training another model, so that's what we will talk about in this tutorial.
 
