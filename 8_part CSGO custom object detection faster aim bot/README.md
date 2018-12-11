@@ -25,7 +25,7 @@ When training model, it will not show steps as it was doing in 5th tutorial, but
 C:\TensorFlow\research\object_detection>tensorboard --logdir=CSGO_training_dir
 ```
 
-I was training my model since I saw that my loss curve stopped rising. It took for me close to 24 hours and did around 21k training steps:
+I was training my model since I saw that my loss curve stopped dropping. It took for me close to 24 hours and did around 21k training steps:
 <p align="center">
     <img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/LOSS%20graph2.JPG"
 </p>
