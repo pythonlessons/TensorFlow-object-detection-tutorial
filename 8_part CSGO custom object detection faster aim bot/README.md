@@ -37,7 +37,7 @@ python export_inference_graph.py --input_type image_tensor --pipeline_config_pat
 
 In final step, we tooks all files from my 7th tutorial and replaced CSGO_frozen_inference_graph.pb file with newly trained inference_graph.
 
-Next we tried to play CS:GO and I let my bot to shoot enemies, you can check this out on my YouTube video.
+Next we tried to play CS:GO and I let my bot to shoot enemies, you can check this out on my [YouTube](https://www.youtube.com/watch?v=9UjsnAg78x8) video.
 
 That’s all for this tutorial. With new model I didn't solved FPS problem, it improved performance slightly but not that we could play our game. So for future work I decided to learn doing stuff on multiprocessing and run our code processes in parallel. So in next tutorial I will be doing stuff with multiprocessing.
 
