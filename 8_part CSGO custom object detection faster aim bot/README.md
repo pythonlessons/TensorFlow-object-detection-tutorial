@@ -3,6 +3,10 @@
 
 Welcome to part 8 of the TensorFlow Object Detection API tutorial series. In this tutorial I will show you how to export newly trained model and we'll test it out.
 
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=9UjsnAg78x8" target="_blank"><img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/8_YouTube.jpg" alt="TensorFlow object detection tutorial"></a>
+</div><br>
+
 So in previous tutorial we made a final working model, which shoots enemies, but our FPS were really slow, so I decided to try training another model, so that's what we will talk about in this tutorial.
 
 I used almost all the same files from 5th tutorial part, so if you don't have them yet you can clone my GitHub repository. In this part I am not covering how to label pictures, generate tfrecord or configure your training files. I already did this on my 5th tutorial. In this tutorial I will cover only this, which were not covered before.
@@ -21,7 +25,10 @@ When training model, it will not show steps as it was doing in 5th tutorial, but
 C:\TensorFlow\research\object_detection>tensorboard --logdir=CSGO_training_dir
 ```
 
-I was training my model since I saw that my loss curve stopped rising. It took for me close to 24 hours and did around 21k training steps.
+I was training my model since I saw that my loss curve stopped rising. It took for me close to 24 hours and did around 21k training steps:
+<p align="center">
+    <img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/LOSS%20graph2.JPG"
+</p>
 
 Then I used same export_inference_graph.py as we used in 6th tutorial. From command promt issued the following command, where “XXXX” in “model.ckpt-XXXX” should be replaced with the highest-numbered .ckpt file in the training folder:
 ```
