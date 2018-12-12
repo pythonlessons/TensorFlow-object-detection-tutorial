@@ -219,4 +219,6 @@ with detection_graph.as_default():
 ```
 
 Same as in 3-rd part, we are testing how fast it is working. To compare results we got in 3-rd tutorial part we are taking the same picture, with the same object count in it. In bellow image, you can see significant difference comparing what we had before, it is in average 1 FPS. If you will run it on GPU you will get from 5 to 10 times boost.
-![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/FPS%20fast.JPG)
+<p align="center">
+    <img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/FPS%20fast.JPG"
+</p>
