@@ -1,4 +1,4 @@
-# TensorFlow Object Detection merged with grabscreen part #1
+# Part #1. TensorFlow Object Detection merged with grabscreen
 ### Original text version of tutorial you can visit [here](http://pylessons.com/Tensorflow-object-detection-merged-grab-screen/).
 
 [![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/3_YouTube.JPG)](http://www.youtube.com/watch?v=X1kBo_h0J2s "TensorFlow real time car object detection merged with desktop grab screen")
@@ -162,9 +162,11 @@ So I tried to use this slow object detection method on image where you can see c
 
 
 And here is the results of frames per second working with TensorFlow CPU version. In average, it is about 7 seconds to receive one frame per second. So if we would like to use it for real time purpose, this would be impossible to do something useful with it. So we need to make it work much faster, we are doing so in second part below.
-![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/FPS%20slow.JPG)
+<p align="center">
+    <img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/FPS%20slow.JPG"
+</p>
 
-# TensorFlow Object Detection merged with grabscreen part #2
+# Part #2. TensorFlow Object Detection merged with grabscreen
 ### Original text version of tutorial you can visit [here](http://pylessons.com/Tensorflow-object-detection-merged-grab-screen-faster/).
 
 [![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/4_YouTube.JPG)](http://www.youtube.com/watch?v=fUbjXsMovtM "TensorFlow realtime object detection making it to work fast")
