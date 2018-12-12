@@ -23,6 +23,8 @@ Main computer specs for this tutorial:
 
 [![IMAGE ALT TEXT](https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/1_YouTube.JPG)](http://www.youtube.com/watch?v=HX2yXajg8Ts "TensorFlow-GPU 1.11 and Object-Detection Install Guide - How to Install for Windows")
 
+### Original text version of tutorials you can visit [here](http://pylessons.com/).
+
 ## TensorFlow-GPU 1.11, CUDA v9.0, cuDNN v7.3.1 installation
 Hardware requirements: 
 *	NVIDIA® GPU card with CUDA® Compute Capability 3.5 or higher
