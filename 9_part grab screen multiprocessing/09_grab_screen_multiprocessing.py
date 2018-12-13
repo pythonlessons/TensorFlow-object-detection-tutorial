@@ -13,7 +13,7 @@ sct = mss.mss()
 monitor = {"top": 40, "left": 0, "width": 800, "height": 640}
 
 
-def GRABMSS_screeb(q):
+def GRABMSS_screen(q):
     while True:
         # Get raw pixels from the screen, save it to a Numpy array
         img = numpy.array(sct.grab(monitor))
@@ -22,7 +22,7 @@ def GRABMSS_screeb(q):
         q.put_nowait(img)
         q.join()
 
-def SHOWMSS_screeb(q):
+def SHOWMSS_screen(q):
     global fps, start_time
     while True:
         if not q.empty():
@@ -49,8 +49,8 @@ if __name__=="__main__":
     q = multiprocessing.JoinableQueue()
 
     # creating new processes
-    p1 = multiprocessing.Process(target=GRABMSS_screeb, args=(q, ))
-    p2 = multiprocessing.Process(target=SHOWMSS_screeb, args=(q, ))
+    p1 = multiprocessing.Process(target=GRABMSS_screen, args=(q, ))
+    p2 = multiprocessing.Process(target=SHOWMSS_screen, args=(q, ))
 
     # starting our processes
     p1.start()
