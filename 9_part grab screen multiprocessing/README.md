@@ -93,6 +93,7 @@ Here is results with multiprocessing:
 <p align="center">
     <img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/09_FPS_fast.JPG"
 </p><br>
+
 We can see that average is about 32 FPS. So our final result is that our grab screen improoved in around 50%. I would like like to impoove it more, but for now I don't have ideas how to do that. Anyway reults are much better than before !
   
 ### Original text version of tutorial you can visit [here](http://pylessons.com/).
