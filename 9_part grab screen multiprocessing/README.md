@@ -57,8 +57,8 @@ if __name__=="__main__":
     q = multiprocessing.JoinableQueue()
 
     # creating new processes
-    p1 = multiprocessing.Process(target=GRABMSS_screeb, args=(q, ))
-    p2 = multiprocessing.Process(target=SHOWMSS_screeb, args=(q, ))
+    p1 = multiprocessing.Process(target=GRABMSS_screen, args=(q, ))
+    p2 = multiprocessing.Process(target=SHOWMSS_screen, args=(q, ))
 
     # starting our processes
     p1.start()
@@ -71,7 +71,7 @@ We begin with creaginf a chared queue.
 # Queue
 q = multiprocessing.JoinableQueue()
 ```
-With following lines we are creating p1 and p2 processes which will run in background. p1 function will call GRABMSS_screeb() function and p2 will call SHOWMSS_screeb() function. As an argument for these functions we must give arguments, we give q there.
+With following lines we are creating p1 and p2 processes which will run in background. p1 function will call GRABMSS_screen() function and p2 will call SHOWMSS_screen() function. As an argument for these functions we must give arguments, we give q there.
 ```
 # creating new processes
 p1 = multiprocessing.Process(target=GRABMSS_screen, args=(q, ))
@@ -83,3 +83,16 @@ Final step is to start our processes, after these commands our grab screen funct
 p1.start()
 p2.start()
 ```
+
+For comparison I ran old code without multiprocessing and with multiprocessing. Here is results without multiprocessing:
+<p align="center">
+    <img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/09_FPS_slow.JPG"
+</p>
+We can see that average is about 19-20 FPS.
+Here is results with multiprocessing:
+<p align="center">
+    <img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/09_FPS_fast.JPG"
+</p>
+We can see that average is about 32 FPS. So our final result is that our grab screen improoved in around 50%. I would like like to impoove it more, but for now I don't have ideas how to do that. Anyway reults are much better than before !
+  
+### Original text version of tutorial you can visit [here](http://pylessons.com/).
