@@ -66,7 +66,7 @@ if __name__=="__main__":
 ```
 
 More about python multiprocessing and queues you can learn on this [link](https://docs.python.org/2/library/multiprocessing.html#multiprocessing.Queue.qsize). Short code explanation:
-We begin with creaginf a chared queue.
+We begin with creating a chared queue:
 ```
 # Queue
 q = multiprocessing.JoinableQueue()
