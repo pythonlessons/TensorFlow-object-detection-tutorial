@@ -23,7 +23,7 @@ def GRABMSS_screen(q):
         q.join()
 ```
 
-Second function we will call SHOWMSS_screen. This function also will run in a while loop, and we always check if our queue is not empty. When we have something in queue we call ```q.get_nowait()``` command which takes everything from queue, and with ```q.task_done()``` we are locking the process, not to interupt queue if we didn't finished picking up all data. After that we do same things as before, showing grabbed image and emasuring FPS.
+Second function we will call SHOWMSS_screen. This function also will run in a while loop, and we always check if our queue is not empty. When we have something in queue we call ```q.get_nowait()``` command which takes everything from queue, and with ```q.task_done()``` we are locking the process, not to interrupt queue if we didn't finished picking up all data. After that we do same things as before, showing grabbed image and measuring FPS.
 ```
 def SHOWMSS_screen(q):
     global fps, start_time
@@ -94,6 +94,6 @@ Here is results with multiprocessing:
     <img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/09_FPS_fast.JPG"
 </p><br>
 
-We can see that average is about 32 FPS. So our final result is that our grab screen improoved in around 50%. I would like like to impoove it more, but for now I don't have ideas how to do that. Anyway reults are much better than before !
+We can see that average is about 32 FPS. So our final result is that our grab screen improved in around 50%. I would like like to impove it more, but for now I don't have ideas how to do that. Anyway results are much better than before !
   
 ### Original text version of tutorial you can visit [here](http://pylessons.com/).
