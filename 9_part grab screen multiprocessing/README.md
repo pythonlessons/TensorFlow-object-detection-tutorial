@@ -50,7 +50,7 @@ def SHOWMSS_screen(q):
 
 Right now, we have two different functions, we will use them in parallel processes.
 
-If we want to run our code in multiprocessing we must begin our code with '''if __name__=="__main__":''' and we must run python script from command prompt elsewise if we'll run it from python shell, we won't get any prints, which we need here to measure FPS. So our full 3rd code part looks like this: 
+If we want to run our code in multiprocessing we must begin our code with ```if __name__=="__main__":``` and we must run python script from command prompt elsewise if we'll run it from python shell, we won't get any prints, which we need here to measure FPS. So our full 3rd code part looks like this: 
 ```
 if __name__=="__main__":
     # Queue
