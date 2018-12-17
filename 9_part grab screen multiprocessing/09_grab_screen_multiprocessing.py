@@ -32,7 +32,7 @@ def SHOWMSS_screen(q):
             img = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
             # Display the picture
             cv2.imshow(title, cv2.cvtColor(img, cv2.COLOR_BGR2RGB))
-            # Display the picture in grayscale
+            # Calculate FPS
             fps+=1
             TIME = time.time() - start_time
             if (TIME) >= display_time :
