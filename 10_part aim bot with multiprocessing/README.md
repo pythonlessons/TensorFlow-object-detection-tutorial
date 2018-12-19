@@ -1,6 +1,10 @@
 # Final aim bot with multiprocessing
 ### Original text version of tutorial you can visit [here](https://pylessons.com/).
 
+<div align="center">
+  <a href="https://www.youtube.com/watch?v=CnADTf0L0zs" target="_blank"><img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/10_YouTube.jpg" alt="TensorFlow object detection"></a>
+</div><br>
+
 Welcome everyone to part 10 of our TensorFlow object detection API tutorial series. For now this will be the final tutorial of this CSGO aim bot video series, because right now I spent too much time on this tutorial. I managed to get best performance as I can for now, for further improvements I would need to investigate time to another detection methods what I will do in future.
 
 Before continuing on this tutorial I should mention, that I updated [9th](https://pylessons.com/Tensorflow-object-detection-grab-screen-multiprocessing/) tutorial code before merging it with CSGO TensorFlow detection code. So I updated [9th](https://pylessons.com/Tensorflow-object-detection-grab-screen-multiprocessing/) tutorial, added one more file in which we are grabbing screen using multiprocessing pipes. Comparing with multiprocessing queues performance is the same (33FPS), but I wanted to test different methods to share data between processes. Adding to multiprocessing pipes, they use communication one to one, and queues may be used as many to many.
@@ -194,3 +198,5 @@ if __name__=="__main__":
 As a final result, I was quite happy that we can achieve more that 20 FPS. But when tensorflow receives images where we detect enemies here comes the bottleneck. FPS drops to 4-5 frames per seconds, and it becomes impossible to play this game for our bot. So in future I may come back to this project, when I find methods, how to detect our enemies faster. There is a way to use YOLO object detection model, it's quite fast and accurate but it's harder to implement (for now). 
 
 Anyway I think I spent a lot of time working on this project, right now I will move to other more benefit project. In nearest future I am planning to make tutorial how to crack CAPTCHA's, how to use SELENIUM to make web surfing bots or AI forex trading bot. 
+
+### Original text version of tutorial you can visit [here](https://pylessons.com/).
