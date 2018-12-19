@@ -1,5 +1,5 @@
 # Grab screen with multiprocessings
-### Original text version of tutorial you can visit [here](http://pylessons.com/).
+### Original text version of tutorial you can visit [here](https://pylessons.com/Tensorflow-object-detection-grab-screen-multiprocessing/).
 
 Welcome everyone to part 9 of our TensorFlow object detection API series. This tutorial will be a little different from previous tutorials. 
 UPDATE. I updated this tutorial, added grab screen code using multiprocessing pipes.
@@ -97,4 +97,4 @@ Here is results with multiprocessing:
 
 We can see that average is about 32 FPS. So our final result is that our grab screen improved in around 50%. I would like like to impove it more, but for now I don't have ideas how to do that. Anyway results are much better than before !
   
-### Original text version of tutorial you can visit [here](http://pylessons.com/).
+### Original text version of tutorial you can visit [here](https://pylessons.com/Tensorflow-object-detection-grab-screen-multiprocessing/).
