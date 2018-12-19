@@ -702,7 +702,7 @@ Here is results with multiprocessing:
 
 We can see that average is about 32 FPS. So our final result is that our grab screen improved in around 50%. I would like like to impove it more, but for now I don't have ideas how to do that. Anyway results are much better than before !
 
-# Part 7. Final TensorFlow aim bot with multiprocessing
+# Part 8. Final TensorFlow aim bot with multiprocessing
 
 Welcome everyone to part 10 of our TensorFlow object detection API tutorial series. For now this will be the final tutorial of this CSGO aim bot video series, because right now I spent too much time on this tutorial. I managed to get best performance as I can for now, for further improvements I would need to investigate time to another detection methods what I will do in future.
 
