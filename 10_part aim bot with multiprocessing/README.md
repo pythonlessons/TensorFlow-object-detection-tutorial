@@ -1,4 +1,4 @@
-# Final aim bot with multiprocessing
+# Final TensorFlow aim bot with multiprocessing
 ### Original text version of tutorial you can visit [here](https://pylessons.com/).
 
 <div align="center">
