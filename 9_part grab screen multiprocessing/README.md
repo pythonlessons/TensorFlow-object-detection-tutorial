@@ -5,7 +5,7 @@ Welcome everyone to part 9 of our TensorFlow object detection API series. This t
 UPDATE. I updated this tutorial, added grab screen code using multiprocessing pipes.
 
 <div align="center">
-  <a href="https://www.youtube.com/watch?v=3Yr1kYTIdV4" target="_blank"><img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/9_YouTube.jpg" alt="Grab screen with multiprocessings"></a>
+  <a href="https://www.youtube.com/watch?v=CnADTf0L0zs" target="_blank"><img src="https://github.com/pythonlessons/TensorFlow-object-detection-tutorial/blob/master/1_part%20images/10_YouTube.jpg" alt="TensorFlow object detection"></a>
 </div><br>
 
 In 8 part I told that I will be working with python multiprocessing to make code work in parallel with other processes. So I spent hours of learning how to use multiprocessing (was not using it before).
