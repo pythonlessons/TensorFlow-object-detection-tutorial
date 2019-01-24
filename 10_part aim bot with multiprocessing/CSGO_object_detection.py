@@ -16,6 +16,10 @@ from collections import defaultdict
 from io import StringIO
 import pyautogui
 
+# pyautogui settings
+pyautogui.MINIMUM_DURATION = 0
+pyautogui.MINIMUM_SLEEP = 0
+pyautogui.PAUSE = 0
 
 # title of our window
 title = "FPS benchmark"
