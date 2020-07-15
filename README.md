@@ -1,4 +1,6 @@
-
+# Right now writing detailed YOLO v3 tutorials for TensorFlow 2.x<br>
+Detection and custom training process works better, is more accurate and has more planned features to do:<br>
+https://github.com/pythonlessons/TensorFlow-2.x-YOLOv3
 
 # TensorFlow Object Detection Introduction
 ### Original text version of tutorial you can visit [here](http://pylessons.com/Tensorflow-object-detection-installation/).
