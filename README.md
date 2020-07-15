@@ -2,7 +2,7 @@
 Detection and custom training process works better, is more accurate and has more planned features to do:<br>
 https://github.com/pythonlessons/TensorFlow-2.x-YOLOv3
 
-# TensorFlow Object Detection Introduction
+# TensorFlow 1.* Object Detection Introduction
 ### Original text version of tutorial you can visit [here](http://pylessons.com/Tensorflow-object-detection-installation/).
 
 The purpose of this tutorial is to learn how to install and prepare TensorFlow framework to train your own convolutional neural network object detection classifier for multiple objects, starting from scratch. At the end of this tutorial, you will have basics and a program that can identify and draw boxes around specific objects in computer screen.
